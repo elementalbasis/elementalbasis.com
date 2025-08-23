@@ -18,3 +18,4 @@ UNDER CONSTRUCTION!
 8. [Marc Ten Bosch](https://marctenbosch.com/)
 9. [Correct Horse Battery Staple](https://correcthorse.pw/)
 10. [Temp Mail](https://temp-mail.org/en/)
+11. [Base 64 Encode](https://www.base64encode.org/)
