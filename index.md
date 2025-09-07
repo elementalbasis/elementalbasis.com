@@ -21,3 +21,4 @@ UNDER CONSTRUCTION!
 11. [Base 64 Encode](https://www.base64encode.org/)
 12. [Measuring Worth](https://www.measuringworth.com/index.php)
 13. [Autotracer](https://www.autotracer.org/)
+14. [USPaperMoney.Info](https://www.uspapermoney.info/)
