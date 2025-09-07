@@ -19,3 +19,5 @@ UNDER CONSTRUCTION!
 9. [Correct Horse Battery Staple](https://correcthorse.pw/)
 10. [Temp Mail](https://temp-mail.org/en/)
 11. [Base 64 Encode](https://www.base64encode.org/)
+12. [Measuring Worth](https://www.measuringworth.com/index.php)
+13. [Autotracer](https://www.autotracer.org/)
