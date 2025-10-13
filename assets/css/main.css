@@ -128,7 +128,7 @@ footer {
   font-weight: 600;*/
   font-size: 1.3rem;
   font-family: 'Noto Sans';
-  font-weight: 600;
+  font-weight: 500;
   /*transition: color 0.5s ease;*/
 }
 
@@ -142,7 +142,7 @@ footer {
 /* Style the rest of the document */
 
 h1, h2, h3 {
-	font-family: /*'C059',*/ serif;
+	font-family: 'Noto Sans', sans-serif;
 	line-height: 1.2;
 }
 
