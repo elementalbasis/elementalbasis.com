@@ -2,26 +2,14 @@
 
 
 
-/* Load the necessary fonts */
-.noto-serif-<uniquifier> {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-
-
 /* Set a general style for the whole document */
 
 body {
 	margin: 40px auto;
 	max-width: 800px;
 	line-height: 1.6;
-	font-size: 1rem;
-	font-family: /*'AdwaitaSans'*/ sans-serif;;
+	font-size: 14pt;
+	font-family: 'Noto Sans', sans-serif;
 	color: #2e2e2e;
 	padding: 0 10px;
 	background-color: #ffffff;/*#f2f2f2;*/
@@ -48,13 +36,13 @@ header {
 }
 
 .site-logo {
-	font-family: 'Noto Serif';
-	font-size: clamp(1.6rem, 6vw, 3rem);
+	font-family: 'Noto Serif', serif;
+	font-size: clamp(2rem, 6vw, 4rem);
 	font-variant: small-caps;
 	font-weight: 800;
 	line-height: 1.1;
 	color: #2e2e2e;
-	margin: 0.5rem 0 0.25rem;
+	margin: 0;
 	letter-spacing: 0.05em;
 }
 
@@ -88,6 +76,16 @@ footer {
   border-bottom: 2px solid #ccc;
   /*font-family: small-caps;*/
   /*font-size: 1.5rem;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .site-nav ul {
@@ -96,7 +94,7 @@ footer {
   padding: 0.75rem 1rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .site-nav li {
@@ -104,17 +102,20 @@ footer {
 }
 
 .site-nav a {
+  display: inline-block;
   text-decoration: none;
   color: #2c2c2c;
   /*font-family: serif;
   font-variant: inherit;
   font-weight: 600;*/
   font-size: 1.3rem;
+  font-weight: 500;
   /*transition: color 0.5s ease;*/
 }
 
 .site-nav a:hover {
   color: #c9a300;
+  text-decoration: underline;
 }
 
 
