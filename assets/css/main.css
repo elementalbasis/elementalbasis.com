@@ -1,3 +1,7 @@
+/* MAIN CSS STYLING */
+
+
+
 /* Set a general style for the whole document */
 
 body {
@@ -5,7 +9,7 @@ body {
 	max-width: 800px;
 	line-height: 1.6;
 	font-size: 1rem;
-	font-family: /*'AdwaitaSans',*/ sans-serif;
+	font-family: /*'AdwaitaSans'*/ sans-serif;;
 	color: #2e2e2e;
 	padding: 0 10px;
 	background-color: #ffffff;/*#f2f2f2;*/
@@ -32,9 +36,10 @@ header {
 }
 
 .site-logo {
-	font-family: /*'C059',*/ serif;
+	font-family: 'Noto';
 	font-size: 3rem;
 	font-variant: small-caps;
+	font-weight: bold;
 	color: #2e2e2e;
 	margin: 0;
 	letter-spacing: 0.05em;
@@ -49,15 +54,6 @@ header {
 .main-logo {
 	width: 15em;
 	margin: -3em;
-}
-
-.header-date {
-	font-family: /*'C059',*/ serif;
-	font-size: 1rem;
-	color: #555;
-	margin-top: 0.25rem;
-	text-align: center;
-	font-style: italic;
 }
 
 footer {
@@ -97,15 +93,15 @@ footer {
 .site-nav a {
   text-decoration: none;
   color: #2c2c2c;
-  font-family: serif;
-  font-variant: small-caps;
-  font-weight: 600;
+  /*font-family: serif;
+  font-variant: inherit;
+  font-weight: 600;*/
   font-size: 1.3rem;
-  transition: color 0.2s ease;
+  /*transition: color 0.5s ease;*/
 }
 
 .site-nav a:hover {
-  color: #c9a300; /* Danetian gold hover */
+  color: #c9a300;
 }
 
 
