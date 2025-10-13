@@ -86,7 +86,34 @@ footer {
   list-style: none;
   margin: 0 auto;
   -webkit-overflow-scrolling: touch;
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
+
+.site-nav::before, .site-nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2rem;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.site-nav::before {
+  left: 0;
+  background: linear-gradient(to right, #f0f0f0 60%, rgba(240,240,240,0));
+}
+
+.site-nav::after {
+  right: 0;
+  background: linear-gradient(to left, #f0f0f0 60%, rgba(240,240,240,0));
+}
+
+/* (optional) hide scrollbars for a cleaner look; remove if you prefer them visible */
+.site-nav::-webkit-scrollbar { display: none; }
+.site-nav { scrollbar-width: none; }
 
 .site-nav ul {
   list-style: none;
