@@ -1,49 +1,3 @@
-/* Load the fonts */
-/*
-@font-face {
-	font-family: 'C059';
-	src: url('fonts/C059-Roman.woff2');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-*/
-/*
-@font-face {
-	font-family: 'C059';
-	src: url('fonts/C059-Bold.woff2');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-*/
-/*
-@font-face {
-	font-family: 'C059';
-	src: url('fonts/C059-Italic.woff2');
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'C059';
-	src: url('fonts/C059-BoldItalic.woff2');
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
-}
-*/
-/*
-@font-face {
-	font-family: 'AdwaitaSans';
-	src: url('fonts/AdwaitaSans-Regular.woff2');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-*/
-
-
 /* Set a general style for the whole document */
 
 body {
@@ -54,7 +8,7 @@ body {
 	font-family: /*'AdwaitaSans',*/ sans-serif;
 	color: #2e2e2e;
 	padding: 0 10px;
-	background-color: #f2f2f2;
+	background-color: #ffffff;/*#f2f2f2;*/
 }
 
 a {
@@ -68,6 +22,7 @@ a:hover {
 }
 
 
+
 /* Style the header and footer */
 
 header {
@@ -76,7 +31,7 @@ header {
 	border-bottom: 2px solid #ccc;
 }
 
-.academy-logo {
+.site-logo {
 	font-family: /*'C059',*/ serif;
 	font-size: 3rem;
 	font-variant: small-caps;
@@ -85,10 +40,15 @@ header {
 	letter-spacing: 0.05em;
 }
 
-.academy-logo a {	
+.site-logo a {	
 	text-decoration: none;
 	cursor: default;
 	color: inherit;
+}
+
+.main-logo {
+	width: 15em;
+	margin: -3em;
 }
 
 .header-date {
@@ -117,7 +77,8 @@ footer {
 .site-nav {
   background-color: #f0f0f0;
   border-bottom: 2px solid #ccc;
-  font-family: /*'AdwaitaSans',*/ sans-serif;
+  /*font-family: small-caps;*/
+  /*font-size: 1.5rem;*/
 }
 
 .site-nav ul {
@@ -136,8 +97,10 @@ footer {
 .site-nav a {
   text-decoration: none;
   color: #2c2c2c;
-  font-weight: 500;
-  font-size: 1rem;
+  font-family: serif;
+  font-variant: small-caps;
+  font-weight: 600;
+  font-size: 1.3rem;
   transition: color 0.2s ease;
 }
 
@@ -148,7 +111,6 @@ footer {
 
 
 /* Style the rest of the document */
-
 
 h1, h2, h3 {
 	font-family: /*'C059',*/ serif;
@@ -170,14 +132,20 @@ p {
 	text-align: right;
 }
 
-
 .centered-img {
   display: block;
   margin: 2rem auto;
   max-width: 65%;
+  min-width: 25%;
   height: auto;
 }
 
+.post-cover img {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+  height: auto;
+}
 
 
 
@@ -205,14 +173,6 @@ figcaption {
 }
 
 
-/* Style the flag icon */
-
-.flag-icon {
-  height: 1.25em;
-  margin-right: 0.5em;
-  vertical-align: middle;
-}
-
 
 /* Style the code block environment */
 
@@ -232,7 +192,7 @@ code {
 
 
 
-/* === MINIMAL CUBICLE STYLES === */
+/* Style the cubicle of posts in the home page */
 
 /* Featured post */
 .featured {
@@ -291,33 +251,23 @@ code {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* Style the blog post navigation bar */
 
 .post-nav {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #ddd;
   font-size: 0.95rem;
+  min-height: 2em;
 }
 
-.post-nav a {
-  text-decoration: none;
-  /*color: #0077cc;*/
+.post-nav .prev {
+  position: absolute;
+  left: 0;
 }
 
-.post-nav a:hover {
-  text-decoration: underline;
+.post-nav .next {
+  position: absolute;
+  right: 0;
 }
-
