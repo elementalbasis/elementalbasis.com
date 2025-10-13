@@ -213,3 +213,19 @@ figcaption {
   vertical-align: middle;
 }
 
+
+/* Style the code block environment */
+
+code, pre {
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 6px;
+  overflow-x: auto;
+  text-indent: -3px;
+}
+
+code {
+  padding: 3px;
+  color: #1e1e1e;
+  text: #555;
+}
