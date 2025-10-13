@@ -36,10 +36,9 @@ header {
 }
 
 .site-logo {
-	font-family: 'Noto';
+	font-family: 'Noto Serif Bold', serif;
 	font-size: 3rem;
 	font-variant: small-caps;
-	font-weight: bold;
 	color: #2e2e2e;
 	margin: 0;
 	letter-spacing: 0.05em;
