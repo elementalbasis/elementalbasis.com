@@ -1,8 +1,9 @@
 ---
 layout: post
-title: How to Measure the Height of a Satellite
+title: How to measure the height of a satellite
 author: Javier Castro
-tags: [calendar, festivals]
+tags: [physics]
+cover: /assets/images/satellite.jpg
 ---
 
 If you go outside to observe the night sky during right after sunset or right
@@ -67,7 +68,7 @@ $$\implies G\frac{M}{R+h} = v^2$$
 $$\implies v = \sqrt{\frac{GM}{R+h}}$$
 
 
-From this, we can make several substitutions.
+From this, we can make several substitutions:
 
 $$ \omega = \frac{v}{D} $$
 
@@ -86,12 +87,12 @@ Earth's gravitational parameter is $\mu = GM = 3.99 \cdot 10^{14}\,\mathrm{m}^3/
 And since we know the values of $\omega$ and $\alpha$,
 we have
 all the variables needed to calculate the right hand side of the equation
-above.
+above:
 
 $$ \frac{GM}{\omega^2 \sin^2(\alpha)} = 2.9 \cdot 10^{18}\,\mathrm{m}^3 $$
 
 Since the radius of the earth is
-$R = 6371\,\mathrm{km}$, we can now solve our cubic equation.
+$R = 6371\,\mathrm{km}$, we can now solve our cubic equation:
 
 $$ h^2 (R + h) = 2.9 \cdot 10^{18}\,\mathrm{m}^3 $$
 
