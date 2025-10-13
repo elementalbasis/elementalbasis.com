@@ -74,24 +74,30 @@ footer {
 .site-nav {
   background-color: #f0f0f0;
   border-bottom: 2px solid #ccc;
-  /*font-family: small-caps;*/
-  /*font-size: 1.5rem;*/
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 900px;
-  overflow-x: auto;
-  white-space: nowrap;
-  gap: 1rem;
-  list-style: none;
-  margin: 0 auto;
-  -webkit-overflow-scrolling: touch;
   position: relative;
+  overflow: hidden;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.site-nav::before, .site-nav::after {
+/* let the UL handle horizontal scrolling */
+.site-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0.75rem 1.5rem;
+  margin: 0;
+  list-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+.site-nav ul::-webkit-scrollbar { display: none; }
+
+/* fade edges */
+.site-nav::before,
+.site-nav::after {
   content: "";
   position: absolute;
   top: 0;
@@ -103,29 +109,12 @@ footer {
 
 .site-nav::before {
   left: 0;
-  background: linear-gradient(to right, #f0f0f0 60%, rgba(240,240,240,0));
+  background: linear-gradient(to right, #f0f0f0 70%, rgba(240,240,240,0));
 }
 
 .site-nav::after {
   right: 0;
-  background: linear-gradient(to left, #f0f0f0 60%, rgba(240,240,240,0));
-}
-
-/* (optional) hide scrollbars for a cleaner look; remove if you prefer them visible */
-.site-nav::-webkit-scrollbar { display: none; }
-.site-nav { scrollbar-width: none; }
-
-.site-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0.75rem 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.site-nav li {
-  margin: 0;
+  background: linear-gradient(to left, #f0f0f0 70%, rgba(240,240,240,0));
 }
 
 .site-nav a {
