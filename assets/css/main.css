@@ -61,10 +61,12 @@ footer {
 	padding: 2rem 1rem;
 	text-align: center;
 	border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
 	font-family: /*'C059',*/ serif;
 	font-size: 0.9rem;
 	color: #555;
 	margin-top: 3rem;
+	background-color: #f0f0f0;
 }
 
 
@@ -125,7 +127,8 @@ footer {
   font-variant: inherit;
   font-weight: 600;*/
   font-size: 1.3rem;
-  font-weight: 500;
+  font-family: 'Noto Sans';
+  font-weight: 600;
   /*transition: color 0.5s ease;*/
 }
 
