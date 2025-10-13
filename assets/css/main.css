@@ -2,6 +2,18 @@
 
 
 
+/* Load the necessary fonts */
+.noto-serif-<uniquifier> {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+
 /* Set a general style for the whole document */
 
 body {
@@ -36,9 +48,10 @@ header {
 }
 
 .site-logo {
-	font-family: 'Noto Serif Bold', serif;
+	font-family: 'Noto Serif';
 	font-size: 3rem;
 	font-variant: small-caps;
+	font-weight: 800;
 	color: #2e2e2e;
 	margin: 0;
 	letter-spacing: 0.05em;
