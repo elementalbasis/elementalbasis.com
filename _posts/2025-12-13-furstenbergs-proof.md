@@ -27,7 +27,7 @@ would like to call "open". In other words, a subset of $X$ is called open if and
 only if it is an element of $\tau$. The topology $\tau$ must satisfy the
 following axioms:
 
-1. Both $\varemptyset, X \in \tau$; that is, both $\varemptyset$ and $X$ are open.
+1. Both $\varnothing, X \in \tau$; that is, both $\varnothing$ and $X$ are open.
 2. Any arbitrary union of sets in $\tau$ is also in $\tau$; that is, if we grab
 any number of open sets (finite or infinite, countable or uncountable) and then
 take their union, this union is also open.
