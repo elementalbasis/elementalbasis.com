@@ -6,7 +6,7 @@ tags: [math]
 #cover: /assets/images/sphere.svg
 ---
 
-$$\require{amsmath}$$
+$$\require{ams}$$
 
 One of the most clever proofs for the infinitude of primes was authored by
 Hilel Furstenberg. It involves defining a topology on $\mathbb{Z}$, and using
@@ -66,12 +66,13 @@ reader.
 Let $A_p = \{pk: k\in\mathbb{Z}\}$. It is clear that $A_p\in\tau$ for any given
 $p$. Now, every integer greater than 1 has at least one prime factor. Hence,
 
-$$ \Union_{p\,\mathrm{prime}} A_p = \mathbb{Z} \setminus {1, -1} $$
+$$ \Union_{p\,\mathrm{prime}} A_p = \mathbb{Z} \setminus \{1, -1\} $$
 
-This is a union of open sets, so $\mathbb{Z} \setminus {1, -1}$ is also open.
-But let us now examine the complement of this union:
+This is a union of open sets, so $\mathbb{Z} \setminus \{1, -1\}$ is also open.
+But let us now examine the complement of this union, which we can obtain using
+De Morgan's laws:
 
-$$ \Intersection_{p\,\mathrm{prime}} \mathbb{Z}\setminus A_p = {1, -1} $$
+$$ \Intersection_{p\,\mathrm{prime}} \mathbb{Z}\setminus A_p = \{1, -1\} $$
 
 Since we mentioned earlier that arithmetic sequences were both closed and open,
 that means that each $\mathbb{Z}\setminus A_p$ is open. And we are taking the
@@ -81,5 +82,5 @@ Now comes the crucial step: If there were only finitely many primes, then we
 would be taking a finite intersection of open sets, which would mean that the
 result is an element of $\tau$. But clearly $\{1, -1\}\notin \tau$, because
 there is no amount of unions or intersections of arithmetic sequences that we
-can make that would result in {1, -1}. So we conclude that the number of primes
+can make that would result in $\{1, -1\}$. So we conclude that the number of primes
 must be infinite.
