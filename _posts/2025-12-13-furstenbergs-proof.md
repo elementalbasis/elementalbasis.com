@@ -54,7 +54,7 @@ $X \setminus A$ is closed.
 Now we are ready to understand Furstenberg's proof. We will define topology
 $\tau$ on $\mathbb{Z}$, where every arithmetic progression is considered open.
 That is, for any integers $a$ and $b$, we have
-$\{a + bk: k\in \mathbb{Z}\} \in \tau$. Now, it is worth pointing out that
+$\\{a + bk: k\in \mathbb{Z}\\} \in \tau$. Now, it is worth pointing out that
 $\tau$ contains more than just those arithmetic sequences; it contains their
 unions as well.
 
@@ -63,12 +63,12 @@ open. This is because for any such sequence, its complement is the union of
 other arithmetic sequences. The proof of this is left as an exercise to the
 reader.
 
-Let $A_p = \{pk: k\in\mathbb{Z}\}$. It is clear that $A_p\in\tau$ for any given
+Let $A_p = \\{pk: k\in\mathbb{Z}\\}$. It is clear that $A_p\in\tau$ for any given
 $p$. Now, every integer greater than 1 has at least one prime factor. Hence,
 
 $$ \bigcup_{p\,\mathrm{prime}} A_p = \mathbb{Z} \setminus \{1, -1\} $$
 
-This is a union of open sets, so $\mathbb{Z} \setminus \{1, -1\}$ is also open.
+This is a union of open sets, so $\mathbb{Z} \setminus \\{1, -1\\}$ is also open.
 But let us now examine the complement of this union, which we can obtain using
 De Morgan's laws:
 
@@ -80,7 +80,7 @@ intersection of many of these $A_p$.
 
 Now comes the crucial step: If there were only finitely many primes, then we
 would be taking a finite intersection of open sets, which would mean that the
-result is an element of $\tau$. But clearly $\{1, -1\}\notin \tau$, because
+result is an element of $\tau$. But clearly $\\{1, -1\\}\notin \tau$, because
 there is no amount of unions or intersections of arithmetic sequences that we
-can make that would result in $\{1, -1\}$. So we conclude that the number of primes
+can make that would result in $\\{1, -1\\}$. So we conclude that the number of primes
 must be infinite.
