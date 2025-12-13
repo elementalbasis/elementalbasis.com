@@ -6,6 +6,8 @@ tags: [math]
 #cover: /assets/images/sphere.svg
 ---
 
+$$\require{amsmath}$$
+
 One of the most clever proofs for the infinitude of primes was authored by
 Hilel Furstenberg. It involves defining a topology on $\mathbb{Z}$, and using
 some of the properties of that topology to derive a contradiction, which proves
