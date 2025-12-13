@@ -4,7 +4,7 @@ window.MathJax = {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
     displayMath: [['$$', '$$'], ['\\[', '\\]']],
     processEscapes: true,
-    packages: ['base', 'ams', 'physics', 'cancel', 'require']
+    packages: ['base', 'ams', 'physics', 'cancel', 'require', 'amsmath']
     /*macros: {
       d: "\\mathrm{d}",
       dd: ["\\frac{\\mathrm{d}#1}{\\mathrm{d}#2}", 2],
