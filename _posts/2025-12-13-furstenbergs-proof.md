@@ -31,7 +31,7 @@ following axioms:
 2. Any arbitrary union of sets in $\tau$ is also in $\tau$; that is, if we grab
 any number of open sets (finite or infinite, countable or uncountable) and then
 take their union, this union is also open.
-3. If $A, B \in \tau$, then $A \intersection B \in \tau$; that is, the
+3. If $A, B \in \tau$, then $A \cap B \in \tau$; that is, the
 intersection of finitely many open sets is also open.
 
 Why are these axioms necessary? Basically, they capture the essence of how open
@@ -66,13 +66,13 @@ reader.
 Let $A_p = \{pk: k\in\mathbb{Z}\}$. It is clear that $A_p\in\tau$ for any given
 $p$. Now, every integer greater than 1 has at least one prime factor. Hence,
 
-$$ \Union_{p\,\mathrm{prime}} A_p = \mathbb{Z} \setminus \{1, -1\} $$
+$$ \bigcup_{p\,\mathrm{prime}} A_p = \mathbb{Z} \setminus \{1, -1\} $$
 
 This is a union of open sets, so $\mathbb{Z} \setminus \{1, -1\}$ is also open.
 But let us now examine the complement of this union, which we can obtain using
 De Morgan's laws:
 
-$$ \Intersection_{p\,\mathrm{prime}} \mathbb{Z}\setminus A_p = \{1, -1\} $$
+$$ \bigcap_{p\,\mathrm{prime}} \mathbb{Z}\setminus A_p = \{1, -1\} $$
 
 Since we mentioned earlier that arithmetic sequences were both closed and open,
 that means that each $\mathbb{Z}\setminus A_p$ is open. And we are taking the
