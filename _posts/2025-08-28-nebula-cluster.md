@@ -18,11 +18,6 @@ network.
 ## Steps:
 
 Install `nebula` on all the nodes.
-
-```
-# sudo pacman -S nebula
-```
-
 Choose a node that will act as a certificate authority. Create a directory,
 such as `$HOME/.nebula`, and run the following command inside the directory:
 
@@ -108,7 +103,6 @@ relay:
 ```
 
 You can tinker with these settings and figure out what works best for you.
-
 On your lighthouse node, install `dnsmasq`, and assign static IP addresses
 to each of your nodes, as well as a private domain name, by adding the
 following lines to `/etc/dnsmasq.conf`:
@@ -120,7 +114,6 @@ address=/landau.neb/10.42.0.3
 ```
 
 Enable the `dnsmasq` daemon on the lighthouse node.
-
 On each regular node, create the following file at
 `/etc/systemd/resolved.conf.d/nebula.conf`:
 
@@ -132,6 +125,5 @@ Domains=~neb neb
 
 This allows each regular node to resolve any private domain names you give it
 into their corresponding Nebula IP addresses.
-
 Configure each node to accept your SSH keys as appropriate. Test your new
 Nebula cluster to make sure it works.
