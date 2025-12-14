@@ -3,7 +3,7 @@ layout: post
 title: Furstenberg's Proof on the Infinitude of Primes
 author: Javier Castro
 tags: [math]
-#cover: /assets/images/sphere.svg
+cover: /assets/images/furstenberg_proof.jpg
 ---
 
 $$\require{ams}$$
