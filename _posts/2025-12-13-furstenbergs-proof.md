@@ -62,8 +62,8 @@ $\tau$ on $\mathbb{Z}$, where every
 is considered open.
 That is, for any integers $a$ and $b$, we have
 $\\{a + bk: k\in \mathbb{Z}\\} \in \tau$. Now, it is worth pointing out that
-$\tau$ contains more than just those arithmetic sequences; it contains their
-unions as well.
+$\tau$ contains more than just those arithmetic sequences; it contains unions
+and intersections between them as well.
 
 Moreover, any such arithmetic sequence in $\tau$ is closed in addition to being
 open. This is because for any such sequence, its complement is the union of
