@@ -283,20 +283,21 @@ code {
 /* Style the blog post navigation bar */
 
 .post-nav {
-  position: relative;
+  /*position: relative;*/
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid #ddd;
   font-size: 0.95rem;
   min-height: 2em;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.post-nav .prev {
-  position: absolute;
-  left: 0;
-}
-
+.post-nav .prev,
 .post-nav .next {
-  position: absolute;
-  right: 0;
+  position: static;
+  left: 0;
 }
