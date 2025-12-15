@@ -21,11 +21,11 @@ right triangle as shown in the diagram. Thus, we can use the
 
 $$D^2 + R^2 = (h + R)^2$$
 
-$$\implies \boxed{D = \sqrt(2Rh + h^2)}$$
+$$\implies \boxed{D = \sqrt{2Rh + h^2}}$$
 
 And if $h \ll R$, we can simply say:
 
-$$ D \approx \sqrt{2Rh} $$
+$$ \boxed{D \approx \sqrt{2Rh}} $$
 
 ## A rubber band all around the world
 
@@ -47,7 +47,7 @@ $$L_\mathrm{stretched} = 2\pi R - 2 R \arctan\qty(\frac{\sqrt{2Rh}}{R}) + 2 \sqr
 
 Now, we can take the difference between stretched and unstretched:
 
-$$\Delta L = L_\mathrm{stretched} - L_\unstretched}$$
+$$\Delta L = L_\mathrm{stretched} - L_\mathrm{unstretched}$$
 
 $$\implies \Delta L = 2\sqrt{2Rh} - 2R\arctan\qty(\frac{\sqrt{2Rh}}{R})$$
 

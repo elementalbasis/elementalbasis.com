@@ -21,8 +21,10 @@ draw(O--A--B--O--C--A);
 dot(A); dot(B); dot(C); dot(D);
 draw(rightanglemark(A, B, O));
 draw(rightanglemark(A, C, O));
+draw(anglemark(B, O, A));
 
 label("$R$", midpoint(B--O), SE);
 label("$R$", midpoint(O--D), W);
 label("$h$", midpoint(D--A), SW);
 label("$D$", midpoint(A--B), NNE);
+label("$\theta$", O, 2*NNE);
