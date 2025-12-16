@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Furstenberg's Proof on the Infinitude of Primes
-author: Javier Castro
+author: Spencer Cokely
 tags: [math]
 cover: /assets/images/furstenberg_proof.jpg
 ---
