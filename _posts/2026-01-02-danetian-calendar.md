@@ -6,7 +6,8 @@ tags: [math]
 cover: https://eclipse.gsfc.nasa.gov/5MCSEmap/-1399--1300/-1325-04-03.gif
 ---
 
-$$\require{siunitx}$
+<script src="/assets/scripts/calendar.js" defer></script>
+<script src="/assets/scripts/today.js" defer></script>
 
 One of my proudest creations is the Danetian calendar. This is a
 [lunisolar calendar](https://en.wikipedia.org/wiki/Lunisolar_calendar), where
@@ -24,7 +25,9 @@ position along the lunar and solar cycles.
 The calculator below allows for the conversion between
 [Gregorian](https://en.wikipedia.org/wiki/Gregorian_calendar),
 [Julian](https://en.wikipedia.org/wiki/Julian_calendar), and
-Danetian dates. (NOTE: All dates must be input in YYYY-MM-DD format).
+Danetian dates. (NOTE: All dates must be input in YYYY-MM-DD format, and years
+must use
+[astronomical numbering](https://en.wikipedia.org/wiki/Astronomical_year_numbering)).
 
 <form id="form_calendar_calculator">
     <label for="input_date">Enter date:</label>
@@ -46,7 +49,7 @@ Danetian dates. (NOTE: All dates must be input in YYYY-MM-DD format).
 
 ## Explanation of the calendar
 
-The synodic period of the Moon is around $\num{29.530588}$ days. Therefore, the
+The synodic period of the Moon is around $29.530\,588$ days. Therefore, the
 months of the calendar alternate between 29 and 30 days in order to keep them in
 sync with the phases of the Moon. If a month has 29 days, it's called a hollow
 month; if it has 30, it's called a full month.
@@ -55,7 +58,7 @@ Grouping months into years presents a challenge: If a year is defined to be
 12 months, that results in 354 days, which is too short. If we instead define a
 year as 13 months, the result is roughly 383 days, which is too long. To get
 around this, some years are set to have 12 months, while others have 13, so that
-the average year length ends up being around $\num{365.2421}$ days.
+the average year length ends up being around $365.2421$ days.
 Essentially, an entire leap month is inserted every two or three years in order
 to keep the calendar in sync with the seasons.
 
@@ -86,27 +89,29 @@ The thirteenth month is called *Terra*.
 ## Mathematical rules for months
 
 Months alternate between full and hollow in a specified pattern in order to keep
-the average month length equal to $\num{29.530588853}$ days. We may express this
+the average month length equal to $\29.530\,588\,853$ days. We may express this
 number as the following continued fraction:
-$$ \num{29.530588853} \approx \[29; 1, 1, 7, 1, 2, 17\] $$
+$$ 29.530\,588\,853 \approx \[29; 1, 1, 7, 1, 2, 17\] $$
 
 From this, we can figure out its
 [rational approximants](https://en.wikipedia.org/wiki/Diophantine_approximation):
-$$ \num{29.530588853} approx 29, 30, \frac{59}{2}, \frac{443}{15}, \frac{502}{17}, \frac{1447}{49}, \frac{\num{25101}}{850} $$
+$$ 29.530\,588\,853 \approx 29, 30, \frac{59}{2}, \frac{443}{15}, \frac{502}{17}, \frac{1447}{49}, \frac{25\,101}{850} $$
 
 These rational approximants will help us figure out how to alternate between
 full months and hollow months in the most optimal way. In essence, we must
-ensure that a cycle of $\num{850}$ months contains $\num{25101}$ days. And we
+ensure that a cycle of $850$ months contains $25\,101$ days. And we
 can fill this grand cycle with as many of the other subcycles as needed
 (1447 days per 49 months, 502 days per 17 months, etc.).
 
 In order to implement the most optimal alternation pattern, certain months in
 the course of time are recognized as "metallic months":
+
 * golden months
 * silver months
 * copper months
 
 The following rules determine which months are metallic:
+
 1. After a full month hollow month comes a hollow month, and vice-versa.
 2. Copper months occur every 17 months. Copper months are always full months,
 overriding rule 1.
@@ -121,8 +126,8 @@ overriding rule 1. Moreover, they override and reset the count on rules 2 and 3.
 
 Years can either be short (12 months) or long (13 months; also called leap
 years). The average length of the
-month is $\frac{\num{25101}}{850} \approx \num{29.530588}$. Thus,
-in order to remain in step with the tropical year of $\num{365.2421}$ days, the
+month is $\frac{25\,101}{850} \approx 29.530\,588$. Thus,
+in order to remain in step with the tropical year of $365.2421$ days, the
 most appropriate rational approximants to use are $\frac{235}{19}$
 and $\frac{4131}{334}$.
 
@@ -132,6 +137,7 @@ which was already known in
 antiquity; it arranges 235 months into 19 years.
 
 The following rules determine which years are leap years:
+
 1. Within a Metonic cycle (19 years), the following years are leap
 years: 2, 5, 7, 10, 13, 15, 18.
 2. After 334 years, a new Metonic cycle starts, overriding and resetting the
