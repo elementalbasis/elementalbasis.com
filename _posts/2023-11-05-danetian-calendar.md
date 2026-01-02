@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Danetian calendar
-author: Nestor Viana
+author: Javier Castro
 tags: [math]
 cover: https://eclipse.gsfc.nasa.gov/5MCSEmap/-1399--1300/-1325-04-03.gif
 ---
