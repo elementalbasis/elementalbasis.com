@@ -2,16 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="150mm"
-   height="150mm"
-   viewBox="0 0 150 150"
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
    sodipodi:docname="eb_logo.svg"
-   inkscape:export-filename="eb_logo_full.svg"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   inkscape:export-filename="eb_logo_square.png"
+   inkscape:export-xdpi="182.88"
+   inkscape:export-ydpi="182.88"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,8 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#ffffffff" />
   <defs
      id="defs1" />
   <g
@@ -44,7 +45,7 @@
      transform="translate(-3.2071504,-7.8036838)">
     <g
        id="g2"
-       transform="translate(16.414301,25.607368)">
+       transform="translate(41.414301,50.607368)">
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:112.889px;line-height:1.25;font-family:'Charis SIL';-inkscape-font-specification:'Charis SIL, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffcc00;fill-opacity:1;stroke-width:0.264583"
