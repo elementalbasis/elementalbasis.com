@@ -2,7 +2,7 @@
 layout: post
 title: What is the shape of a hanging cable?
 author: Javier Castro
-tags: [math, physics]
+tags: [mathematics, physics]
 cover: /assets/images/catenary_curve.jpg
 ---
 

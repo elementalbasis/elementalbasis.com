@@ -2,7 +2,7 @@
 layout: post
 title: Setting up a Nebula cluster
 author: Javier Castro
-tags: [beowulf cluster, distributed computing, vpn]
+tags: [computing]
 cover: /assets/images/nebula.svg
 ---
 
@@ -15,7 +15,7 @@ together, where each machine has their own dedicated IP address.
 This works regardless of whether the machines are hidden behind a home
 network.
 
-## Steps:
+## Setting up Nebula
 
 Install `nebula` on all the nodes.
 Choose a node that will act as a certificate authority. Create a directory,
@@ -103,6 +103,9 @@ relay:
 ```
 
 You can tinker with these settings and figure out what works best for you.
+
+## Setting up custom DNS resolution
+
 On your lighthouse node, install `dnsmasq`, and assign static IP addresses
 to each of your nodes, as well as a private domain name, by adding the
 following lines to `/etc/dnsmasq.conf`:
@@ -120,10 +123,13 @@ On each regular node, create the following file at
 ```
 [Resolve]
 DNS=10.42.0.1
-Domains=~neb neb
+Domains=~neb
 ```
 
 This allows each regular node to resolve any private domain names you give it
 into their corresponding Nebula IP addresses.
+
+## Setting up SSH keys
+
 Configure each node to accept your SSH keys as appropriate. Test your new
 Nebula cluster to make sure it works.

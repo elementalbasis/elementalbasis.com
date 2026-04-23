@@ -2,7 +2,7 @@
 layout: post
 title: Furstenberg's Proof on the Infinitude of Primes
 author: Spencer Cokely
-tags: [math]
+tags: [mathematics]
 cover: /assets/images/furstenberg_proof.jpg
 ---
 

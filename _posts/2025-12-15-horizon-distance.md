@@ -2,7 +2,7 @@
 layout: post
 title: How far away is the horizon?
 author: Javier Castro
-tags: [math]
+tags: [mathematics]
 cover: /assets/images/asy/horizon_distance.svg
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Deriving the volume of an n-sphere
 author: Jackson Hall
-tags: [math]
+tags: [mathematics]
 cover: /assets/images/sphere.svg
 ---
 
