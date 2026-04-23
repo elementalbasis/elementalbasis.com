@@ -3,6 +3,8 @@ layout: default
 title: Elemental Basis
 ---
 
+## A mathematical blog for the physics-minded.
+
 <nav class="tag-menu">
   <button type="button" data-tag="all" class="active">All</button>
   <button type="button" data-tag="mathematics">Mathematics</button>
