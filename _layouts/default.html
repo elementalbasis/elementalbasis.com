@@ -3,41 +3,71 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" media="screen" href="/assets/css/main.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="https://danetiska.com/assets/css/main.css">
+	<script src="https://danetiska.com/assets/scripts/calendar.js" defer></script>
+	<script src="https://danetiska.com/assets/scripts/today.js" defer></script>
+	<script src="https://danetiska.com/assets/scripts/nav.js" defer></script>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<script src="https://danetiska.com/assets/scripts/mathjax-config.js" defer></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
 
-	<script src="/assets/scripts/mathjax-config.js" defer></script>
-	<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
+	<!--<script defer src="https://danetiska.com/assets/scripts/inflect.js"></script>-->
 
-	<title>Elemental Basis</title>
+	<link rel="icon" type="image/svg+xml" href="/assets/images/eb_logo.svg">
+
+	<title>Danetian Academy</title>
+
+	<!-- Tags used for preview of link by many websites, such as Instagram.-->
+	<meta property="og:title" content="{{ page.title | default: site.title }}">
+	<meta property="og:description" content="Elemental Basis: physics, mathematics, computing, and more.">
+	<meta property="og:image" content="/assets/images/eb_logo_square.png">
+	<meta property="og:url" content="https://elementalbasis.com{{ page.url }}">
+	<meta property="og:type" content="website">
 </head>
 <body>
+<div class="page">
 
-<header>
-	<h1 class="site-logo"><a href="/">Elemental Basis</a></h1>
+<header class="masthead">
+  <nav class="site-nav">
+    <a href="/"><img src="/assets/images/eb_logo_full.svg" class="nav-logo"></a>
+
+    <button class="nav-toggle">&equiv;</button>
+
+    <ul class="nav-links" id="primary-nav">
+      <!--<li><a href="/">Home</a></li>-->
+      <li><a href="/about">About</a></li>
+      <li><a href="/posts">Posts</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<nav class="site-nav">
-<ul>
-	<li><a href="/">Home</a></li>
-	<li><a href="/about.html">About</a></li>
-	<li><a href="/projects.html">Projects</a></li>
-	<li><a href="/blog.html">Blog</a></li>
-	<li><a href="/contact.html">Contact</a></li>
-</ul>
-</nav>
-
 <main>
+<!--${CONTENT}-->
 {{ content }}
 </main>
 
-<footer>
-<span>© 2016-2026 Elemental Basis. All rights reserved.</span>
-</footer>
+<footer class="site-footer">
+  <div class="footer-inner">
+<!--
+    <div class="footer-brand">
+      <a href="/"><img src="/assets/images/danetiska_academia_logo.svg" class="nav-logo"></a>
+    </div>
+-->
+    <div class="footer-meta">© 2016–2026 Elemental Basis. All rights reserved.</div>
+<!--
+    <nav class="footer-legal">
+      <a href="/editorial-note">Editorial note</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/external-resources">External Resources</a>
+    </nav>
+-->
 
+    <a href="https://danetiska.com"><img src="https://danetiska.com/assets/images/danetiska_academia_logo_white.svg" class="footer-brand" alt="Danetiska Academia"></a>
+    <!--<img src="https://danetiska.com/assets/images/ministeriom_culturas_educatziones_i_recercas.svg" class="footer-brand" alt="Danetiska Respublica: Ministeriom Culturas, Educatziones, i Recercas">-->
+  </div>
+</footer>
+</div>
 </body>
 </html>
