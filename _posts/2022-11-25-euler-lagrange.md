@@ -2,7 +2,7 @@
 layout: post
 title: Deriving the Euler-Lagrange Equation
 author: Javier Castro
-tags: [physics]
+tags: [mathematics]
 cover: /assets/images/asy/delta-s.svg
 ---
 
