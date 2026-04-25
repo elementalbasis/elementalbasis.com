@@ -16,7 +16,7 @@ In this post, we will derive this result from first principles.
 
 ## How pressure varies with depth
 
-<!-- Include an image of the rectangle here -->
+<img src="/assets/images/asy/water_rectangle_layer.svg" alt="Water rectangle layer" class="centered-img">
 
 We must first determine how water pressure changes with depth. Let the
 coordinate $z$ denote depth, with $z = 0$ marking the surface of the water, and
@@ -41,22 +41,28 @@ $$ \implies \boxed{P = P_0 + \rho g z}$$
 where $P_0$ represents the pressure at the surface, which is equal to
 [atmospheric pressure](https://en.wikipedia.org/wiki/Atmospheric_pressure).
 
+
+
 ## The buoyant force
 
+<img src="/assets/images/asy/submerged_blob.svg" alt="Submerged blob" class="centered-img">
+
 We can generalize the differential equation above using the
-[gradient operator](https://en.wikipedia.org/wiki/Nabla_symbol):
+[gradient operator](https://en.wikipedia.org/wiki/Nabla_symbol). Let
+$\vb{g} = -g \,\vu{z}$. Then, since $P$ only depends on the $z$ coordinate, we
+can write:
 
 $$ \grad P = \rho \vb{g}$$
 
 Now, suppose we have some arbitrary volume $V$ submerged in the water. Then, the
 pressure of the water will exert an inward force upon each infinitesimal
-surface element $\dd{A}$. If $\vb{n}$ is the unit vector normal to the area
-element $\dd{A}$, then the force is in the direction of $-\vb{n}$.
+surface element $\dd{A}$. If $\vu{n}$ is the unit vector normal to the area
+element $\dd{A}$, then the force is in the direction of $-\vu{n}$.
 Using a corollary of the
 [divergence theorem](https://en.wikipedia.org/wiki/Divergence_theorem), we
 can write the total force acting on the volume as:
 
-$$ \vb{F}_\mathrm{net} = - \oiint\limits_S \vb{n}P \dd{A} = -\iiint\limits_V \grad P \dd{V}$$
+$$ \vb{F}_\mathrm{net} = - \oiint\limits_S \vu{n}P \dd{A} = -\iiint\limits_V \grad P \dd{V}$$
 
 $$\implies \vb{F}_\mathrm{net} = -\iiint\limits_V \rho \vb{g} \dd{V} = -\rho\vb{g} \iiint\limits_V \dd{V}$$
 
