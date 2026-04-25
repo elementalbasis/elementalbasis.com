@@ -7,7 +7,7 @@ cover: /assets/images/archimedes-bathtub.svg
 ---
 
 Two thousand years ago,
-[Archimedes](https://en.wikipedia.org/wiki/Archimedes) had a his famous
+[Archimedes](https://en.wikipedia.org/wiki/Archimedes) had his famous
 [eureka moment](https://www.uakron.edu/polymer/agpa-k12outreach/professional-development-modules/pdf/float_your_boat_archimedes.pdf),
 where he discovered that one could measure arbitrary volumes by the water that
 they displace when submerged. Eventually, this led to him discovering the
