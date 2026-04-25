@@ -11,7 +11,9 @@ Two thousand years ago,
 [eureka moment](https://www.uakron.edu/polymer/agpa-k12outreach/professional-development-modules/pdf/float_your_boat_archimedes.pdf),
 where he discovered that one could measure arbitrary volumes by the water that
 they displace when submerged. Eventually, this led to him discovering the
-[Principle of Buoyancy](https://en.wikipedia.org/wiki/Archimedes%27_principle).
+[Principle of Buoyancy](https://en.wikipedia.org/wiki/Archimedes%27_principle),
+which states that the buoyant force acting on a submerged object
+is equivalent to the weight of the water it displaces.
 In this post, we will derive this result from first principles.
 
 ## How pressure varies with depth
