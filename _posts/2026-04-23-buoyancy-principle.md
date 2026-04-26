@@ -26,8 +26,8 @@ a positive $z$ when underwater. From
 real life experience, we know that pressure $P$ increases the deeper we go.
 Therefore, let us examine some rectangular volume of water with area $A$ and
 height $\dd{z}$. Recalling that pressure is force per unit area,
-the top of the rectangle feels a downward force with magnitude
-$A\,P$, while the bottom of the rectangle feels an upward force of
+the top of the rectangle feels a downward force
+$-A\,P$, while the bottom of the rectangle feels an upward force
 $A\,(P+\dd{P})$. Moreover, the rectangular volume of water feels its own weight
 $w = - \rho A \dd{z} g$, where $\rho$ is the density of water, and
 $g$ is Earth's gravitational acceleration. Since this is
