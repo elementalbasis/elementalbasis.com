@@ -65,15 +65,15 @@ surface element $\dd{A}$. If $\vu{n}$ is the unit vector normal to the area
 element $\dd{A}$, then the force is in the direction of $-\vu{n}$.
 Using a corollary of the
 [divergence theorem](https://en.wikipedia.org/wiki/Divergence_theorem), we
-can write the total force acting on the volume as:
+can write the buoyant force acting on the volume as:
 
 $$
 \begin{align}
-&& \vb{F}_\mathrm{net} &= - \oiint\limits_S \vu{n}P \dd{A} \\
+&& \vb{F}_\mathrm{buoyant} &= - \oiint\limits_S \vu{n}P \dd{A} \\
 && &= -\iiint\limits_V \grad P \dd{V} \\
 && &= -\iiint\limits_V \rho \vb{g} \dd{V} \\
 && &= -\rho\vb{g} \iiint\limits_V \dd{V} \\
-&\implies& \Aboxed{\vb{F}_\mathrm{net} &= -\rho V \vb{g}} \\
+&\implies& \Aboxed{\vb{F}_\mathrm{buoyant} &= -\rho V \vb{g}} \\
 \end{align}
 $$
 
