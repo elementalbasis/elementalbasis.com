@@ -172,3 +172,11 @@ Host    *.neb
 
 Now each node has been configured to accept your SSH keys. Test your new
 Nebula cluster to make sure it works.
+
+
+
+## Time synchronization
+
+One issue you may face, especially in older computers, is that the system clock
+drifts off from real time, and this messes up with the Nebula protocol. To solve
+this, simply enable the `ntpdate` daemon.
