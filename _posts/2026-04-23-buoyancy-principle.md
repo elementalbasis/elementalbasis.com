@@ -23,22 +23,25 @@ In this post, we will derive this result from first principles.
 We must first determine how water pressure changes with depth. Let the
 coordinate $z$ denote depth, with $z = 0$ marking the surface of the water, and
 a positive $z$ when underwater. From
-real life experience, we know that pressure $P(z)$ increases the deeper we go.
+real life experience, we know that pressure $P$ increases the deeper we go.
 Therefore, let us examine some rectangular volume of water with area $A$ and
 height $\dd{z}$. Recalling that pressure is force per unit area,
 the top of the rectangle feels a downward force with magnitude
-$A\,P(z)$, while the bottom of the rectangle feels an upward force of
-$A\,P(z+\dd{z})$. Moreover, the volume also feels the downward force of gravity,
-with magnitude $mg = \rho A \dd{z} g$. And since this is
+$A\,P$, while the bottom of the rectangle feels an upward force of
+$A\,(P+\dd{P})$. Moreover, the rectangular volume of water feels its own weight
+$w = - \rho A \dd{z} g$, where $\rho$ is the density of water, and
+$g$ is Earth's gravitational acceleration. Since this is
 a static system, the sum of all forces should cancel out:
 
-$$ -A\,P(z) + A\,P(z + \dd{z}) - \rho A \dd{z} g = 0$$
-
-$$\implies P(z + \dd{z}) - P(z) = \rho g \dd{z} $$
-
-$$ \implies \dv{P}{z} = \rho g $$
-
-$$ \implies \boxed{P = P_0 + \rho g z}$$
+$$
+\begin{align}
+&& \sum\limits_i F_i &= 0 \\
+&\implies& -A\,P + A\,(P+\dd{P}) - \rho A \dd{z} g &= 0 \\
+&\implies& P(z + \dd{z}) - P(z) &= \rho g \dd{z} \\
+&\implies& \dv{P}{z} &= \rho g \\
+&\implies& \Aboxed{P &= P_0 + \rho g z} \\
+\end{align}
+$$
 
 where $P_0$ represents the pressure at the surface, which is equal to
 [atmospheric pressure](https://en.wikipedia.org/wiki/Atmospheric_pressure).
@@ -64,12 +67,16 @@ Using a corollary of the
 [divergence theorem](https://en.wikipedia.org/wiki/Divergence_theorem), we
 can write the total force acting on the volume as:
 
-$$ \vb{F}_\mathrm{net} = - \oiint\limits_S \vu{n}P \dd{A} = -\iiint\limits_V \grad P \dd{V}$$
+$$
+\begin{align}
+&& \vb{F}_\mathrm{net} &= - \oiint\limits_S \vu{n}P \dd{A} \\
+&& &= -\iiint\limits_V \grad P \dd{V} \\
+&& &= -\iiint\limits_V \rho \vb{g} \dd{V} \\
+&& &= -\rho\vb{g} \iiint\limits_V \dd{V} \\
+&\implies& \Aboxed{\vb{F}_\mathrm{net} &= -\rho V \vb{g}} \\
+\end{align}
+$$
 
-$$\implies \vb{F}_\mathrm{net} = -\iiint\limits_V \rho \vb{g} \dd{V} = -\rho\vb{g} \iiint\limits_V \dd{V}$$
-
-$$ \implies \boxed{\vb{F}_\mathrm{net} = -\rho V \vb{g}}$$
-
-Therefore, we see that the buoyant force is equivalent to the weight of the
-water displaced, which is precisely what Archimedes discovered two thousand
-years ago.
+Therefore, we see that the buoyant force has a magnitude equivalent to the
+weight of the water displaced by the submerged object, which is precisely what
+Archimedes discovered two thousand years ago.

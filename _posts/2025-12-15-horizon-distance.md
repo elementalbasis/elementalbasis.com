@@ -19,13 +19,50 @@ Since your line of sight is tangent to the surface of the earth, it forms a
 right triangle as shown in the diagram. Thus, we can use the
 [Pythagorean theorem](https://en.wikipedia.org/wiki/Pythagorean_theorem):
 
-$$D^2 + R^2 = (h + R)^2$$
+$$
+\begin{align}
+&& D^2 + R^2 &= (h + R)^2 \\
+&\implies& D &= \sqrt{(h+R)^2 - R^2} \\
+&\implies& \Aboxed{D &= \sqrt{2Rh + h^2}} \\
+\end{align}
+$$
 
-$$\implies \boxed{D = \sqrt{2Rh + h^2}}$$
-
-And if $h \ll R$, we can simply say:
+And if $h \ll R$, as in every-day life, we can simply say:
 
 $$ \boxed{D \approx \sqrt{2Rh}} $$
+
+
+
+## How much does the straight-line distance differ from the arc-length distance?
+
+The arc-length distance to the horizon is given by:
+
+$$
+\begin{align}
+s &= R \theta \\
+&= R \,\arccos(\frac{R}{R+h}) \\
+&= R \,\arccos(\frac{1}{1 + \frac{h}{R}}) \\
+\end{align}
+$$
+
+And since $h \ll R$, we can use a Taylor approximation for $\arccos$, along with
+some other approximations along the way:
+
+$$
+\begin{align}
+&& \arccos(x) &\approx \sqrt{1 -x^2} \inlinetext{for} x \to 1 \\
+&\implies& s &\approx R \sqrt{1 - \qty(\frac{1}{1 + \frac{h}{R}})^2} \\
+&& &\approx R \sqrt{1 - \qty(1 - \frac{h}{R})^2} \\
+&& &= R \sqrt{2 \frac{h}{R} - \qty(\frac{h}{R})^2} \\
+&& &= \sqrt{2Rh - h^2} \\
+&& &\approx \sqrt{2Rh} \\
+\end{align}
+$$
+
+Therefore, we see that in every-day life, the arc-length distance does not
+differ significantly from the straight-line distance.
+
+
 
 ## A rubber band all around the world
 

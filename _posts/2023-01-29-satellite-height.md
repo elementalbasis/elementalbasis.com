@@ -53,52 +53,67 @@ velocity of $\omega = \frac{v}{D}$.
 
 But we already measured the angular velocity around the observer:
 
-$$\omega = \frac{\Delta \theta}{\Delta t} = \frac{40.1^\circ}{52\,\mathrm{s}} = 0.77^\circ/\mathrm{s} = 1.3 \cdot 10^{-2}\,\mathrm{rad/s}$$
+$$
+\begin{align}
+\omega &= \frac{\Delta \theta}{\Delta t} \\
+&= \frac{40.1^\circ}{52\,\mathrm{s}} \\
+&= 1.3 \times 10^{-2}\,\mathrm{rad/s} \\
+\end{align}
+$$
 
 
-Now we can use Newton's laws to find the velocity of the satellite. The
+Now we can use
+[Newton's laws](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion)
+to find the speed of the satellite. The
 satellite is at a distance $R+h$ from the center of the Earth, where $R$ is the
 radius of the Earth. By equating the force of gravity to the centripetal force,
 we obtain:
 
-$$G\frac{Mm}{(R+h)^2} = m \frac{v^2}{R+h}$$
-
-$$\implies G\frac{M}{R+h} = v^2$$
-
-$$\implies v = \sqrt{\frac{GM}{R+h}}$$
+$$
+\begin{align}
+&&G\frac{Mm}{(R+h)^2} &= m \frac{v^2}{R+h} \\
+&\implies& G\frac{M}{R+h} &= v^2 \\
+&\implies& v &= \sqrt{\frac{GM}{R+h}}
+\end{align}
+$$
 
 
 From this, we can make several substitutions:
 
-$$ \omega = \frac{v}{D} $$
+$$
+\begin{align}
+&& \omega &= \frac{v}{D} \\
+&\implies& \omega &= \frac{v}{h \sin(\alpha)} \\
+&\implies& \omega h \sin(\alpha) &= v \\
+&\implies& \omega h \sin(\alpha) &= \sqrt{\frac{GM}{R+h}} \\
+&\implies& \omega^2 h^2 \sin^2(\alpha) &= \frac{GM}{R+h} \\
+&\implies& h^2 (R + h) &= \frac{GM}{\omega^2 \sin^2(\alpha)} \\
+\end{align}
+$$
 
-$$ \implies \omega = \frac{v}{h \sin(\alpha)} $$
 
-$$ \implies \omega h \sin(\alpha) = v $$
-
-$$ \implies \omega h \sin(\alpha) = \sqrt{\frac{GM}{R+h}} $$
-
-$$ \implies \omega^2 h^2 \sin^2(\alpha) = \frac{GM}{R+h} $$
-
-$$ \implies h^2 (R + h) = \frac{GM}{\omega^2 \sin^2(\alpha)} $$
-
-
-Earth's gravitational parameter is $\mu = GM = 3.99 \cdot 10^{14}\,\mathrm{m}^3/\mathrm{s}^2$.
+We know the values of the
+[gravitational constant](https://en.wikipedia.org/wiki/Gravitational_constant)
+$G$ and the mass $M$ of the Earth.
+Together, they yield $GM = 3.99 \times 10^{14}\,\mathrm{m}^3/\mathrm{s}^2$.
 And since we know the values of $\omega$ and $\alpha$,
 we have
 all the variables needed to calculate the right hand side of the equation
 above:
 
-$$ \frac{GM}{\omega^2 \sin^2(\alpha)} = 2.9 \cdot 10^{18}\,\mathrm{m}^3 $$
+$$ \frac{GM}{\omega^2 \sin^2(\alpha)} = 2.9 \times 10^{18}\,\mathrm{m}^3 $$
 
 Since the radius of the earth is
 $R = 6371\,\mathrm{km}$, we can now solve our cubic equation:
 
-$$ h^2 (R + h) = 2.9 \cdot 10^{18}\,\mathrm{m}^3 $$
-
-$$ \implies h = 6.5 \cdot 10^5\,\mathrm{m} $$
+$$
+\begin{align}
+&& h^2 (R + h) &= 2.9 \times 10^{18}\,\mathrm{m}^3 \\
+&\implies& h &= 6.5 \times 10^5\,\mathrm{m} \\
+\end{align}
+$$
 
 
 Thus, the satellite is flying $\sim 700\,\mathrm{km}$ above the surface of the Earth. If we do a
 Google search on [<span style="white-space: nowrap">CZ-2C R/B</span>](https://www.heavens-above.com/orbit.aspx?satid=36089),
-then we will see that our calculation is spot-on.
+we see that our calculation is spot-on.
