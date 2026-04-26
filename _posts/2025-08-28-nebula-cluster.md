@@ -121,7 +121,8 @@ You can tinker with these settings and figure out what works best for you.
 
 On the master node, install `dnsmasq`, and assign static IP addresses
 to each of your nodes, as well as a private domain name, by adding the
-following lines to `/etc/dnsmasq.conf`:
+following lines to `/etc/dnsmasq.conf`, replacing the domain names however
+you wish:
 
 ```
 address=/master.neb/10.42.0.1
