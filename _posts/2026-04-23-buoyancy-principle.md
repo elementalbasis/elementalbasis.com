@@ -14,7 +14,7 @@ they displace when submerged. Eventually, this led to him discovering the
 [Principle of Buoyancy](https://en.wikipedia.org/wiki/Archimedes%27_principle),
 which states that the buoyant force acting on a submerged object
 is equivalent to the weight of the water it displaces.
-In this post, we will derive this result from first principles.
+In this post, we will derive this result from first principles. Our derivation will show that the buoyant force arises due to the pressure gradient of water.
 
 ## How pressure varies with depth
 
