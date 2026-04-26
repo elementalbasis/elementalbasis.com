@@ -131,5 +131,44 @@ into their corresponding Nebula IP addresses.
 
 ## Setting up SSH keys
 
-Configure each node to accept your SSH keys as appropriate. Test your new
+In order to allow one to log into any node from any other node, we must set up
+the ssh keys. In the certificate authority node, generate an ssh key that will
+be used to sign all others:
+
+```
+# ssh-keygen -f id_ed25519_nebula_ca_sign
+```
+
+This will create a private key and a public key. Copy the public key into each
+node at `/etc/ssh/nebula-ca.pub`. Now we will generate the ssh key at each node.
+Run the following command at each node separately:
+
+```
+# ssh-keygen -f id_ed25519_nebula_auth
+```
+
+This creates separate keys for each node. Then, copy the public key onto
+the certificate authority node, and sign it:
+
+```
+# ssh-keygen -s id_ed25519_nebula_ca_sign -I user@nebula -V +52w id_ed25519_nebula_auth.pub
+```
+
+This creates a file called `id_ed25519_nebula_auth-cert.pub`. Copy this file to
+its respective node. Then add this line to each node's `/etc/ssh/sshd_config`:
+
+```
+TrustedUserCAKeys /etc/ssh/nebula-ca.pub
+```
+
+And finally, add the following to your `~/.ssh/config`:
+
+```
+Host    *.neb
+    User    username
+    IdentityFile    ~/.ssh/id_ed25519_nebula_auth
+    CertificateFile ~/.ssh/id_ed25519_nebula_auth-cert.pub
+```
+
+Now each node has been configured to accept your SSH keys. Test your new
 Nebula cluster to make sure it works.
