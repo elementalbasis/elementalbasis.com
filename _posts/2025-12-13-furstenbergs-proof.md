@@ -11,7 +11,8 @@ $$\require{ams}$$
 One of the
 [most clever proofs for the infinitude of primes](https://en.wikipedia.org/wiki/Furstenberg%27s_proof_of_the_infinitude_of_primes)
 was authored by
-Hilel Furstenberg. It involves defining a topology on $\mathbb{Z}$, and using
+[Hilel Furstenberg](https://en.wikipedia.org/wiki/Hillel_Furstenberg).
+It involves defining a topology on $\mathbb{Z}$, and using
 some of the properties of that topology to derive a contradiction, which proves
 that the number of primes cannot be finite.
 
