@@ -132,7 +132,7 @@ into their corresponding Nebula IP addresses.
 ## Setting up SSH keys
 
 In order to allow one to log into any node from any other node, we must set up
-the ssh keys. In the certificate authority node, generate an ssh key that will
+the SSH keys. In the certificate authority node, generate an ssh key that will
 be used to sign all others:
 
 ```
