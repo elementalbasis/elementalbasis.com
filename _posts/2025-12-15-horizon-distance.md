@@ -84,9 +84,12 @@ $$L_\mathrm{stretched} = 2\pi R - 2 R \arctan\qty(\frac{\sqrt{2Rh}}{R}) + 2 \sqr
 
 Now, we can take the difference between stretched and unstretched:
 
-$$\Delta L = L_\mathrm{stretched} - L_\mathrm{unstretched}$$
-
-$$\implies \Delta L = 2\sqrt{2Rh} - 2R\arctan\qty(\frac{\sqrt{2Rh}}{R})$$
+$$
+\begin{align}
+\Delta L &= L_\mathrm{stretched} - L_\mathrm{unstretched} \\
+&= 2\sqrt{2Rh} - 2R\arctan\qty(\frac{\sqrt{2Rh}}{R}) \\
+\end{align}
+$$
 
 And since $h = 1\,\mathrm{m}$ and $R = 6371\,\mathrm{km}$, this yields a
 surprisingly small result:
