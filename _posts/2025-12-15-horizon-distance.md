@@ -86,8 +86,8 @@ Now, we can take the difference between stretched and unstretched:
 
 $$
 \begin{align}
-&& \Delta L &= L_\mathrm{stretched} - L_\mathrm{unstretched} \\
-&\implies& \Delta L &= 2\sqrt{2Rh} - 2R\arctan\qty(\frac{\sqrt{2Rh}}{R}) \\
+\Delta L &= L_\mathrm{stretched} - L_\mathrm{unstretched} \\
+&= 2\sqrt{2Rh} - 2R\arctan\qty(\frac{\sqrt{2Rh}}{R}) \\
 \end{align}
 $$
 
