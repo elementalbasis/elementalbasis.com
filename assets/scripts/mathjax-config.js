@@ -5,6 +5,10 @@ window.MathJax = {
     inlineMath: {'[+]': [['$', '$']]},
     displayMath: {'[+]': [['$$', '$$']]},
     processEscapes: true,
+    enableExplorer: false,
+    enableSpeech: false,
+    enableBraille: false,
+    enableMenu: false,
     macros: {
       inlinetext: ['{\\quad \\text{#1} \\,\\,}', 1],
       where: ['\\inlinetext{where}', 0],
